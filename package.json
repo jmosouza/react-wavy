@@ -1,13 +1,17 @@
 {
   "name": "@jmosouza/react-wavy",
-  "version": "0.2.0",
+  "version": "0.3.0-0",
   "description": "Generates a canvas waveform.",
   "main": "build/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/jamesfzhang/react-wavy.git"
   },
-  "keywords": ["react", "waveform", "wavy"],
+  "keywords": [
+    "react",
+    "waveform",
+    "wavy"
+  ],
   "scripts": {
     "build": "webpack"
   },
