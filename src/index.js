@@ -104,8 +104,8 @@ export default class Wavy extends React.Component {
 
   onClick = event => {
     const rect = this.canvas.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    this.props.onClick(x);
+    const fraction = (event.clientX - rect.left) / rect.width;
+    this.props.onClick(fraction);
   };
 
   render() {

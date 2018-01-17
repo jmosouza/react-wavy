@@ -115,8 +115,9 @@ var Wavy = function (_React$Component) {
       _this.setState({ cursor: 0 });
     }, _this.onClick = function (event) {
       var rect = _this.canvas.getBoundingClientRect();
-      var x = event.clientX - rect.left;
-      _this.props.onClick(x);
+      console.log(event.clientX + " - " + rect.left + " - " + rect.width + " ");
+      var fraction = (event.clientX - rect.left) / rect.width;
+      _this.props.onClick(fraction);
     }, _temp), _possibleConstructorReturn(_this, _ret);
   }
 
