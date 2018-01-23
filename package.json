@@ -1,6 +1,6 @@
 {
   "name": "@jmosouza/react-wavy",
-  "version": "0.3.0-0",
+  "version": "0.3.0-1",
   "description": "Generates a canvas waveform.",
   "main": "build/index.js",
   "repository": {
