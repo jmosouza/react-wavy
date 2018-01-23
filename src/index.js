@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default class Wavy extends React.Component {
   state = { cursor: 0 };
@@ -19,18 +20,18 @@ export default class Wavy extends React.Component {
   };
 
   static propTypes = {
-    data: React.PropTypes.array.isRequired,
-    width: React.PropTypes.number,
-    height: React.PropTypes.number,
-    gap: React.PropTypes.number,
-    step: React.PropTypes.number,
-    progress: React.PropTypes.number,
-    useMiddle: React.PropTypes.bool,
-    useCursor: React.PropTypes.bool,
-    onClick: React.PropTypes.func,
-    innerColor: React.PropTypes.string,
-    outerColor: React.PropTypes.string,
-    cursorColor: React.PropTypes.string
+    data: PropTypes.array.isRequired,
+    width: PropTypes.number,
+    height: PropTypes.number,
+    gap: PropTypes.number,
+    step: PropTypes.number,
+    progress: PropTypes.number,
+    useMiddle: PropTypes.bool,
+    useCursor: PropTypes.bool,
+    onClick: PropTypes.func,
+    innerColor: PropTypes.string,
+    outerColor: PropTypes.string,
+    cursorColor: PropTypes.string
   };
 
   componentDidMount() {
